@@ -1,207 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Creatures - JS Data Attributes Example</title>
+<head>
+    <title>Creatures - JS Data Attributes Example</title>
 
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-            }
-            
-            div.creature {
-                padding: 10px;
-                border: 2px solid black;
-                border-radius: 10px;
-                max-width: 400px;
-                min-height: 100px;
-                margin-bottom: 10px;
-                transition: all 0.3s ease;
-            } 
-            
-            div.creature img {
-                max-width: 200px;
-                float: right;
-            }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-            .button-container {
-                margin-top: 20px;
-            }
+        div.creature {
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            max-width: 400px;
+            min-height: 100px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
 
-            .button-container button {
-                margin-right: 10px;
-                padding: 10px;
-                font-size: 16px;
-                cursor: pointer;
-            }
+        div.creature img {
+            max-width: 200px;
+            float: right;
+        }
 
-        </style>
-    </head>   
-    <body>
-        <h1>Creatures</h1>
-        <h3>A JavaScript data attributes example by Salim Noori</h3>
-        <p>This page demonstrates how to use JavaScript data attributes to differentiate data.</p>
-        <p>When you click <b>Show Creature Home</b>, the background color will change based on their natural environment:</p> 
-        <div>
-            <ul>
-                <li>land: green</li>
-                <li>water: blue</li>
-                <li>air: yellow</li>
-            </ul>
-        </div>
+        .button-container {
+            margin-top: 20px;
+        }
 
-        <p>When you click <b>Show Creature Type</b>, the border color and style will change based on the type of creature:</p>
-        <div> 
-            <ul>
-                <li>animal: solid red</li>
-                <li>insect: dashed orange</li>
-            </ul>
-        </div>
+        .button-container button {
+            margin-right: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Creatures</h1>
+    <h3>A JavaScript data attributes example by Salim Noori</h3>
+    <p>This page demonstrates how to use JavaScript data attributes to differentiate data.</p>
+    <p>When you click <b>Show Creature Home</b>, the background color will change based on their natural environment:</p>
+    <div>
+        <ul>
+            <li>land: green</li>
+            <li>water: blue</li>
+            <li>air: yellow</li>
+        </ul>
+    </div>
+
+    <p>When you click <b>Show Creature Type</b>, the border color and style will change based on the type of creature:</p>
+    <div>
+        <ul>
+            <li>animal: solid red</li>
+            <li>insect: dashed orange</li>
+        </ul>
+    </div>
+
+    <!-- Creatures -->
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/monkey.png" alt="monkey">
+        <h3>Monkey</h3>
+        <p>Monkeys are cute, but don't try to cuddle them.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/monkey.png" alt="monkey">
-            <h3>Monkey</h3>
-            <p>Monkeys are cute, but don't try to cuddle them.</p>
-        </div>
+    <div class="creature" data-home="air" data-type="animal">    
+        <img src="images/hummingbird.png" alt="hummingbird">
+        <h3>Hummingbird</h3>
+        <p>Hummingbirds are cute, but don't get in the way of their food.</p>
+    </div>
         
-        <div class="creature" data-home="air" data-type="animal">    
-            <img src="images/hummingbird.png" alt="hummingbird">
-            <h3>Hummingbird</h3>
-            <p>Hummingbirds are cute, but don't get in the way of their food.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="insect">    
+        <img src="images/spider.png" alt="spider">
+        <h3>Spider</h3>
+        <p>Spiders are not cute, in fact they creep me out.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="insect">    
-            <img src="images/spider.png" alt="spider">
-            <h3>Spider</h3>
-            <p>Spiders are not cute, in fact they creep me out.</p>
-        </div>
+    <div class="creature" data-home="air" data-type="animal">    
+        <img src="images/crow.png" alt="crow">
+        <h3>Crow</h3>
+        <p>Crows are not cute, and don't feed them your french fries.</p>
+    </div> 
         
-        <div class="creature" data-home="air" data-type="animal">    
-            <img src="images/crow.png" alt="crow">
-            <h3>Crow</h3>
-            <p>Crows are not cute, and don't feed them your french fries.</p>
-        </div> 
+    <div class="creature" data-home="water" data-type="animal">    
+        <img src="images/fish.png" alt="fish">
+        <h3>Fish</h3>
+        <p>Fish are not cute, but they taste good!</p>
+    </div>
         
-        <div class="creature" data-home="water" data-type="animal">    
-            <img src="images/fish.png" alt="fish">
-            <h3>Fish</h3>
-            <p>Fish are not cute, but they taste good!</p>
-        </div>
+    <div class="creature" data-home="land" data-type="insect">    
+        <img src="images/stinkbug.png" alt="stinkbug">
+        <h3>Stink Bug</h3>
+        <p>Stinkbugs are not cool! Don't touch them!</p>
+    </div>    
+    
+    <!-- New Creatures -->
+    <div class="creature" data-home="land" data-type="insect">    
+        <img src="images/beetle.png" alt="beetle">
+        <h3>Beetle</h3>
+        <p>Beetles are interesting, but can be pests.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="insect">    
-            <img src="images/stinkbug.png" alt="stinkbug">
-            <h3>Stink Bug</h3>
-            <p>Stinkbugs are not cool! Don't touch them!</p>
-        </div>    
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/bull.png" alt="bull">
+        <h3>Bull</h3>
+        <p>Bulls are strong and powerful animals.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="insect">    
-            <img src="images/beetle.png" alt="beetle">
-            <h3>Beetle</h3>
-            <p>Beetles are interesting, but can be pests.</p>
-        </div>
+    <div class="creature" data-home="air" data-type="insect">    
+        <img src="images/butterfly.png" alt="butterfly">
+        <h3>Butterfly</h3>
+        <p>Butterflies are beautiful and delicate.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/bull.png" alt="bull">
-            <h3>Bull</h3>
-            <p>Bulls are strong and powerful animals.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/cat.png" alt="cat">
+        <h3>Cat</h3>
+        <p>Cats are independent and playful.</p>
+    </div>
         
-        <div class="creature" data-home="air" data-type="insect">    
-            <img src="images/butterfly.png" alt="butterfly">
-            <h3>Butterfly</h3>
-            <p>Butterflies are beautiful and delicate.</p>
-        </div>
+    <div class="creature" data-home="water" data-type="animal">    
+        <img src="images/crab.png" alt="crab">
+        <h3>Crab</h3>
+        <p>Crabs are fascinating and tasty.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/cat.png" alt="cat">
-            <h3>Cat</h3>
-            <p>Cats are independent and playful.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/cow.png" alt="cow">
+        <h3>Cow</h3>
+        <p>Cows provide milk and beef.</p>
+    </div>
         
-        <div class="creature" data-home="water" data-type="animal">    
-            <img src="images/crab.png" alt="crab">
-            <h3>Crab</h3>
-            <p>Crabs are fascinating and tasty.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/dog.png" alt="dog">
+        <h3>Dog</h3>
+        <p>Dogs are loyal and friendly companions.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/cow.png" alt="cow">
-            <h3>Cow</h3>
-            <p>Cows provide milk and beef.</p>
-        </div>
+    <div class="creature" data-home="air" data-type="animal">    
+        <img src="images/dove.png" alt="dove">
+        <h3>Dove</h3>
+        <p>Doves symbolize peace and love.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/dog.png" alt="dog">
-            <h3>Dog</h3>
-            <p>Dogs are loyal and friendly companions.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="mythical">    
+        <img src="images/dragon.png" alt="dragon">
+        <h3>Dragon</h3>
+        <p>Dragons are mythical and majestic.</p>
+    </div>
         
-        <div class="creature" data-home="air" data-type="animal">    
-            <img src="images/dove.png" alt="dove">
-            <h3>Dove</h3>
-            <p>Doves symbolize peace and love.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/gazelle.png" alt="gazelle">
+        <h3>Gazelle</h3>
+        <p>Gazelles are graceful and fast.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="mythical">    
-            <img src="images/dragon.png" alt="dragon">
-            <h3>Dragon</h3>
-            <p>Dragons are mythical and majestic.</p>
-        </div>
+    <div class="creature" data-home="water" data-type="animal">    
+        <img src="images/hippo.png" alt="hippo">
+        <h3>Hippo</h3>
+        <p>Hippos are large and mostly live in water.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/gazelle.png" alt="gazelle">
-            <h3>Gazelle</h3>
-            <p>Gazelles are graceful and fast.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/horse.png" alt="horse">
+        <h3>Horse</h3>
+        <p>Horses are strong and used for riding.</p>
+    </div>
         
-        <div class="creature" data-home="water" data-type="animal">    
-            <img src="images/hippo.png" alt="hippo">
-            <h3>Hippo</h3>
-            <p>Hippos are large and mostly live in water.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/elephant.png" alt="elephant">
+        <h3>Elephant</h3>
+        <p>Elephants are intelligent and large.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/horse.png" alt="horse">
-            <h3>Horse</h3>
-            <p>Horses are strong and used for riding.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/lion.png" alt="lion">
+        <h3>Lion</h3>
+        <p>Lions are known as the king of the jungle.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/elephant.png" alt="elephant">
-            <h3>Elephant</h3>
-            <p>Elephants are intelligent and large.</p>
-        </div>
+    <div class="creature" data-home="air" data-type="animal">    
+        <img src="images/owl.png" alt="owl">
+        <h3>Owl</h3>
+        <p>Owls are wise and nocturnal birds.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/lion.png" alt="lion">
-            <h3>Lion</h3>
-            <p>Lions are known as the king of the jungle.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/rabbit.png" alt="rabbit">
+        <h3>Rabbit</h3>
+        <p>Rabbits are cute and fluffy.</p>
+    </div>
         
-        <div class="creature" data-home="air" data-type="animal">    
-            <img src="images/owl.png" alt="owl">
-            <h3>Owl</h3>
-            <p>Owls are wise and nocturnal birds.</p>
-        </div>
+    <div class="creature" data-home="air" data-type="animal">    
+        <img src="images/pigeon.png" alt="pigeon">
+        <h3>Pigeon</h3>
+        <p>Pigeons are common in urban areas.</p>
+    </div>
         
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/rabbit.png" alt="rabbit">
-            <h3>Rabbit</h3>
-            <p>Rabbits are cute and fluffy.</p>
-        </div>
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/pig.png" alt="pig">
+        <h3>Pig</h3>
+        <p>Pigs are intelligent and farm animals.</p>
+    </div>
         
-        <div class="creature" data-home="air" data-type="animal">    
-            <img src="images/pigeon.png" alt="pigeon">
-            <h3>Pigeon</h3>
-            <p>Pigeons are common in urban areas.</p>
-        </div>
-        
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/pig.png" alt="pig">
-            <h3>Pig</h3>
-            <p>Pigs are intelligent and farm animals.</p>
-        </div>
-        
-        <div class="creature" data-home="land" data-type="animal">    
-            <img src="images/squirrel.png" alt="squirrel">
-            <h3>Squirrel</h3>
-            <p>Squirrels are
+    <div class="creature" data-home="land" data-type="animal">    
+        <img src="images/squirrel.png" alt="squirrel">
